@@ -1,0 +1,5 @@
+main: com.williambl.plugins.testplugin.testPlugin
+name: TestPlugin
+version: 1.0
+author: Willbl3pic
+description: Shows a message when a player places a block.
