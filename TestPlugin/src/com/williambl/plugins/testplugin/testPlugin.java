@@ -5,5 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class testPlugin extends JavaPlugin{
     public void onEnable(){
     	getServer().getPluginManager().registerEvents(new TestPluginListener(), this);
+    	getCommand("test").setExecutor(new TestPluginCommands());
     }
 }

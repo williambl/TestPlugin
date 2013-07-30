@@ -6,14 +6,17 @@ import org.bukkit.command.CommandSender;
 
 public class TestPluginCommands implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[]args){
+		
 		if (commandLabel.equalsIgnoreCase("test")){
-			sender.sendMessage("You just sent me a command!");
-		} else {
-	    	sender.sendMessage("Incorrect Number of Arguments!")
+			sender.sendMessage("You just sent me a command with argument " + args + "!");
+		}
+		else {
+	    	sender.sendMessage("Incorrect Number of Arguments!");
 	    }
-		   return true;
+		
+		return true;
 		
 		
-		return false;
+		
 	}
 }
